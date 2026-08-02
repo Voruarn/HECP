@@ -1,4 +1,4 @@
-# HECP: Heterogeneous Evidence Collaboration Prope for Token-Level Hallucination Localization in Large Vision Language Models
+# HECP: Heterogeneous Evidence Collaboration Probe for Token-Level Hallucination Localization in Large Vision Language Models
 
 Official codebase for the paper:
 **"Heterogeneous Evidence Collaboration for Token-Level Hallucination Localization in Large Vision Language Models"**
