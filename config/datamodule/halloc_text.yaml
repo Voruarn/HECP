@@ -1,0 +1,4 @@
+defaults:
+  - _default
+
+name: halloc_text

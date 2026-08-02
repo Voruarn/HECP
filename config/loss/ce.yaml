@@ -1,0 +1,8 @@
+name: ce
+params:
+  weight: [1, 1]
+  size_average: null
+  ignore_index: -100
+  reduce: null
+  reduction: mean
+  label_smoothing: 0.0

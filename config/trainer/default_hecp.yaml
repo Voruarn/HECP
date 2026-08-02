@@ -1,0 +1,17 @@
+max_epochs: 30
+
+devices: [6]
+num_nodes: 1
+strategy: ddp_find_unused_parameters_true
+accelerator: gpu
+sync_batchnorm: true
+
+log_every_n_steps: 64
+num_sanity_val_steps: 0
+check_val_every_n_epoch: 1
+
+precision: 32
+gradient_clip_val: 0.0
+
+deterministic: False
+

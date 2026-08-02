@@ -1,0 +1,31 @@
+defaults:
+  - _self_
+  - experiment: default
+  - trainer: default
+  - datamodule: hecp
+  - dataset@train_dataset: hecp_train_qwen2_5
+  - dataset@valid_dataset: hecp_val_qwen2_5
+  - module: hecp
+  - model: hecp_qwen2_5
+  - metric: classification
+  - callback: classification
+  - loss@train_loss: ce
+  - loss@valid_loss: ce
+  - optimizer: adamw
+  - scheduler: cosine
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+
+hydra:
+  run:
+    dir: ${experiment.work_dir}/${experiment.name}/logs
+  job_logging:
+    handlers:
+      file:
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log
+  # job:
+  #   config:
+  #     override_dirname:
+  #       exclude_keys:
+  #         - hydra
+  #         - experiment.work_dir

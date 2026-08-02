@@ -1,0 +1,8 @@
+defaults:
+  - _default
+
+name: hecp
+
+params:
+  file_paths: /root/autodl-tmp/Halloc/ebding40k/train/vlm_instruct/qwen2_5_mrg, /root/autodl-tmp/Halloc/ebding40k/train/vlm_vqa/qwen2_5_mrg, /root/autodl-tmp/Halloc/ebding40k/train/vlm_caption/qwen2_5_mrg
+  all_flag: true

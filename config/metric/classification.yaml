@@ -1,0 +1,22 @@
+name: classification
+params:
+  accuracy:
+    active_in_train: false
+    active_in_valid: true
+
+  auroc:
+    active_in_train: false
+    active_in_valid: true
+    average: macro
+
+  recall_at_threshold:
+    active_in_train: false
+    active_in_valid: true
+    threshold: 0.01
+    average: macro
+  
+  precision_at_threshold:
+    active_in_train: false
+    active_in_valid: true
+    threshold: 0.01
+    average: macro

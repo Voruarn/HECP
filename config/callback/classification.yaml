@@ -1,0 +1,13 @@
+ModelCheckpoint:
+  filename: best
+  monitor: obj/valid_auroc
+  save_last: true
+  save_top_k: 3
+  mode: max
+  auto_insert_metric_name: false
+  save_weights_only: false
+  save_on_train_epoch_end: false
+
+LearningRateMonitor:
+  logging_interval: epoch
+  log_momentum: false

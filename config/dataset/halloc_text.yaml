@@ -1,0 +1,8 @@
+defaults:
+  - _default
+
+name: halloc_text
+
+params:
+  file_paths:
+  all_flag: false

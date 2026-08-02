@@ -1,0 +1,7 @@
+lookahead:
+  active: false
+  params:
+    k: 5
+    alpha: 0.5
+
+weight_decay: 0

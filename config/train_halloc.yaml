@@ -1,0 +1,25 @@
+defaults:
+  - _self_
+  - experiment: default
+  - trainer: default
+  - datamodule: halloc_text
+  - dataset@train_dataset: halloc_text
+  - dataset@valid_dataset: halloc_text
+  - module: halloc_text
+  - model: halloc_text
+  - metric: classification
+  - callback: classification
+  - loss@train_loss: ce
+  - loss@valid_loss: ce
+  - optimizer: adamw
+  - scheduler: cosine
+  - override hydra/job_logging: colorlog
+  - override hydra/hydra_logging: colorlog
+
+hydra:
+  run:
+    dir: ${experiment.work_dir}/${experiment.name}/logs
+  job_logging:
+    handlers:
+      file:
+        filename: ${hydra.runtime.output_dir}/${hydra.job.name}.log

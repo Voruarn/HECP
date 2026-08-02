@@ -1,0 +1,4 @@
+name: halloc
+params:
+  model_name_or_path: "bert-base-uncased"
+  vlm_out_dim: 768

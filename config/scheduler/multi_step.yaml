@@ -1,0 +1,4 @@
+name: multi_step
+params:
+  gamma: 0.1
+  milestones:
