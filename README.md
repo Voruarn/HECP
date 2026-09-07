@@ -3,8 +3,8 @@
 Official codebase for the paper:
 **"Heterogeneous Evidence Collaboration for Token-Level Hallucination Localization in Large Vision Language Models"**
 
----
-<!--
+<!-- ---
+
 ## Overview
 
 - We identify the fundamental limitation of existing token-level hallucination detection methods: the reliance on unimodal evidence, and propose the principle of heterogeneous evidence collaboration as a more effective paradigm for hallucination localization in LVLMs.
@@ -12,8 +12,8 @@ Official codebase for the paper:
 - Extensive experiments across three mainstream LVLMs demonstrate that HECP achieves state-of-the-art performance, with significant improvements over existing baselines. Ablation studies confirm the necessity of each module and the complementarity of heterogeneous signals.
 
 Our HECP operates on multi-stage VLM hidden states + VLM Response Text + images.
---!>
----
+
+--- -->
 
 ## Repository Structure
 
